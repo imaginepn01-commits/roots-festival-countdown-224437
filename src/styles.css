@@ -1,0 +1,164 @@
+@import 'tailwindcss' source('../');
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  @apply m-0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --font-body: 'Noto Serif', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Playfair Display', 'Noto Serif', Georgia, serif;
+  --content-width: 76rem;
+  --reading-width: 42rem;
+  --background: #f8f1e3;
+  --foreground: #3d221f;
+  --card: #fbf6ec;
+  --card-foreground: #3d221f;
+  --popover: #fbf6ec;
+  --popover-foreground: #3d221f;
+  --primary: #3d221f;
+  --primary-foreground: #fbf3e2;
+  --secondary: #f1e3c8;
+  --secondary-foreground: #3d221f;
+  --muted: #efe3cd;
+  --muted-foreground: #6e4b3c;
+  --accent: #e2662a;
+  --accent-foreground: #fff8ec;
+  --destructive: #b42318;
+  --destructive-foreground: #fff8ec;
+  --border: #d9c3a0;
+  --input: #cdb48c;
+  --ring: #e2662a;
+  --chart-1: #e2662a;
+  --chart-2: #c9381f;
+  --chart-3: #3d221f;
+  --chart-4: #ecc595;
+  --chart-5: #735c46;
+  --radius: 0.5rem;
+  --sidebar: #fbf6ec;
+  --sidebar-foreground: #3d221f;
+  --sidebar-primary: #3d221f;
+  --sidebar-primary-foreground: #fbf3e2;
+  --sidebar-accent: #f1e3c8;
+  --sidebar-accent-foreground: #3d221f;
+  --sidebar-border: #d9c3a0;
+  --sidebar-ring: #e2662a;
+  /* ROOTS palette */
+  --roots-brown: #3d221f;
+  --roots-deep: #28160e;
+  --roots-cream: #f8f1e3;
+  --roots-sand: #ecc595;
+  --roots-orange: #e2662a;
+  --roots-red: #c9381f;
+  --roots-maroon: #7a2e22;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --container-content: var(--content-width);
+  --container-reading: var(--reading-width);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-roots-brown: var(--roots-brown);
+  --color-roots-deep: var(--roots-deep);
+  --color-roots-cream: var(--roots-cream);
+  --color-roots-sand: var(--roots-sand);
+  --color-roots-orange: var(--roots-orange);
+  --color-roots-red: var(--roots-red);
+  --color-roots-maroon: var(--roots-maroon);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Giấy dó: nền kem với vân nhẹ, nhất quán với bản thiết kế */
+.paper-bg {
+  background-color: var(--roots-cream);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgb(236 197 149 / 0.18), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgb(236 197 149 / 0.16), transparent 50%);
+}
+
+.heading-gradient {
+  background: linear-gradient(180deg, #2a1712 0%, #7a2e22 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading-sunset {
+  background: linear-gradient(90deg, #e2662a 0%, #c9381f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
