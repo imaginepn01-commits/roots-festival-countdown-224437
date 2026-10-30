@@ -89,7 +89,7 @@ export function Hero() {
         </p>
         <h1 className="mt-4 md:mt-5">
           <img
-            src="/img/logo-roots.png"
+            src="/img/logo-roots.svg"
             alt="ROOTS Festival – Return to where it all begins"
             width={520}
             height={185}
@@ -105,7 +105,7 @@ export function Hero() {
           </strong>
         </p>
         <img
-          src="/img/hero-date.png"
+          src="/img/hero-date.svg"
           alt="19–20.06.2027 • Ninh Thuận"
           width={420}
           height={48}

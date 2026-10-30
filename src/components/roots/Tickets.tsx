@@ -24,7 +24,7 @@ export function Tickets() {
         <div className="text-center">
           <p className="text-xs tracking-[0.3em] text-roots-sand uppercase">Đặt vé ngay</p>
           <h2 id="dat-ve-title">
-            <img src="/img/logo-roots.png" alt="ROOTS Festival" width={520} height={185} loading="lazy" className="mx-auto mt-4 h-auto w-[260px] md:w-[360px]" />
+            <img src="/img/logo-roots.svg" alt="ROOTS Festival" width={520} height={185} loading="lazy" className="mx-auto mt-4 h-auto w-[260px] md:w-[360px]" />
           </h2>
           <p className="mt-4 text-sm text-roots-cream/85 md:text-base">
             <strong className="text-roots-sand">{EVENT.dateLabel.replace('–', ' – ')}</strong> | {EVENT.venue}
