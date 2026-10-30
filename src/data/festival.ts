@@ -4,9 +4,9 @@
 
 export const PLACEHOLDER = 'Đang cập nhật'
 
-/** Đường dẫn ảnh qua Netlify Image CDN (tự resize + webp). */
+/** Đường dẫn ảnh qua Netlify Image CDN (tự resize + webp, chất lượng cao để giữ nét chữ trong ảnh). */
 export function img(path: string, width: number) {
-  return `/.netlify/images?url=${encodeURIComponent(path)}&w=${width}&fm=webp`
+  return `/.netlify/images?url=${encodeURIComponent(path)}&w=${width}&fm=webp&q=90`
 }
 
 export const EVENT = {

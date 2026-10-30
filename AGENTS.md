@@ -20,7 +20,7 @@ src/styles.css         ROOTS palette (--roots-*), fonts (Noto Serif body, Playfa
 
 ## Conventions & decisions
 
-- Images are served through Netlify Image CDN via `img(path, width)`; transparent PNGs (logo, headings, map) are served directly.
+- Images are served through Netlify Image CDN via `img(path, width)`; logos and text headings are traced vector SVGs (served directly, crisp at any DPR); the map PNG is served directly.
 - Section anchors: `top`, `line-up`, `hoat-dong`, `music-concert`, `lich-trinh`, `merchandise`, `faq`, `dat-ve`. Use `scrollToId()` for smooth scrolling.
 - Overlays on mockup images use percentage coordinates (`hotspot` on activities, `area` on merch) measured against the 1366px-wide source crops. Re-measure if an image is replaced.
 - Desktop merch uses the original merch artwork with clickable areas; mobile uses individual product crops in a grid.

@@ -45,7 +45,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-[1366px] items-center justify-between px-4 sm:px-8 md:h-[4.75rem]">
         <a href="#top" aria-label="ROOTS Festival – về đầu trang" className="shrink-0">
-          <img src="/img/logo-vr.png" alt="Viet Roots Collective" className="h-10 w-auto md:h-14" />
+          <img src="/img/logo-vr.svg" alt="Viet Roots Collective" width={256} height={159} className="h-10 w-auto md:h-14" />
         </a>
 
         <nav aria-label="Điều hướng chính" className="hidden items-center gap-12 md:flex lg:gap-16">

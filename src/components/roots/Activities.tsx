@@ -231,7 +231,7 @@ function FoodAndFun({ onOpen }: { onOpen: (a: Activity) => void }) {
         <div className="text-center">
           <p className="text-xs tracking-[0.3em] text-roots-orange uppercase">B. Vui chơi &amp; Ẩm thực</p>
           <h2 id="food-title" className="mt-3">
-            <img src="/img/heading-food.png" alt="Vui chơi & Ẩm thực" width={626} height={86} className="mx-auto h-auto w-[300px] sm:w-[480px] md:w-[626px]" />
+            <img src="/img/heading-food.svg" alt="Vui chơi & Ẩm thực" width={626} height={86} className="mx-auto h-auto w-[300px] sm:w-[480px] md:w-[626px]" />
           </h2>
           <p className="mt-4 font-display text-lg text-roots-maroon italic">
             Ăn một chút. Chơi một chút. Khám phá Ninh Thuận nhiều hơn một chút.

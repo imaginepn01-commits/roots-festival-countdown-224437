@@ -12,7 +12,7 @@ export function Lineup() {
       <div className="mx-auto max-w-[1366px] px-4 sm:px-8 lg:px-[78px]">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:gap-10">
           <h2 className="shrink-0">
-            <img src="/img/heading-lineup.png" alt="Line up" width={245} height={54} className="h-auto w-[180px] md:w-[245px]" />
+            <img src="/img/heading-lineup.svg" alt="Line up" width={245} height={54} className="h-auto w-[180px] md:w-[245px]" />
           </h2>
           <div>
             <p className="text-xl tracking-wide text-roots-cream uppercase md:text-[28px]">
